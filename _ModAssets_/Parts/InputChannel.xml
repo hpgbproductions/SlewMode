@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Part name="InputChannel">
+  <PartType id="Mod_SlewMode_InputChannel" name="InputChannel" modPrefabPath="Assets/_ModAssets_/Parts/InputChannel.prefab" mass="10" health="100" damageDisconnect="true" sharesRigidBody="false" combineMeshes="false" disconnectForce="10" underwaterDragScalar="30" defaultMaterials="0,0,0,0">
+    <Modifiers>
+      <InputController defaultActivationGroup="0" defaultInput="VTOL" defaultMax="1" defaultMin="-1" invertOnMirror="false" invertType="output" name="channelData" propertyEditorDesc="Channel Data" zeroOnDeactivate="true" />
+      <ModModifier id="SlewMode_InputChannel" type="InputChannel, SlewMode-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <DefaultState _channel="0" _component="X" />
+      </ModModifier>
+    </Modifiers>
+    <AttachPoints>
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="-1,0,0" position="-0.25,0,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="1,0,0" position="0.25,0,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,-1,0" position="0,-0.25,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,1,0" position="0,0.25,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,0,-1" position="0,0,-0.25" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,0,1" position="0,0,0.25" />
+    </AttachPoints>
+  </PartType>
+  <DesignerPart name="Input Channel" category="Slew Mode" description="Controls a vector component channel. Units are meters for translation and degrees for rotation.">
+    <Assembly>
+      <Parts>
+        <Part id="1" partType="Mod_SlewMode_InputChannel" position="0,0,0" rotation="0,0,0">
+          <InputController.State defaultActivationGroup="0" defaultInput="VTOL" defaultMax="1" defaultMin="-1" invertOnMirror="false" invertType="output" name="channelData" propertyEditorDesc="Channel Data" zeroOnDeactivate="true" />
+        </Part>
+      </Parts>
+    </Assembly>
+  </DesignerPart>
+</Part>

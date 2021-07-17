@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Part name="CollisionsController">
+  <PartType id="Mod_SlewMode_CollisionsController" name="CollisionsController" modPrefabPath="Assets/_ModAssets_/Parts/CollisionsController.prefab" mass="10" health="100" damageDisconnect="true" sharesRigidBody="false" combineMeshes="false" disconnectForce="10" underwaterDragScalar="30" defaultMaterials="0,0,0,0">
+    <Modifiers>
+      <InputController defaultActivationGroup="8" defaultInput="0" defaultMax="1" defaultMin="-1" invertOnMirror="false" invertType="output" name="activation" propertyEditorDesc="Activation (AG ONLY)" zeroOnDeactivate="true" />
+      <ModModifier id="SlewMode_Anticollisions" type="Anticollisions, SlewMode-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <DefaultState />
+      </ModModifier>
+    </Modifiers>
+    <AttachPoints>
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="-1,0,0" position="-0.25,0,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="1,0,0" position="0.25,0,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,-1,0" position="0,-0.25,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,1,0" position="0,0.25,0" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,0,-1" position="0,0,-0.25" />
+      <AttachPoint adaptiveIgnore="false" a="1111" allowRotation="false" display="false" displayWhenDragged="false" fuselageConnection="false" ignoreGrid="false" ignoreSurface="false" jointType="Fixed" wingAttach="false" normal="0,0,1" position="0,0,0.25" />
+    </AttachPoints>
+  </PartType>
+  <DesignerPart name="Collisions Controller" category="Slew Mode" description="Disables collisions on all rigidbodies on the aircraft.">
+    <Assembly>
+      <Parts>
+        <Part id="1" partType="Mod_SlewMode_CollisionsController" position="0,0,0" rotation="0,0,0">
+          <InputController.State defaultActivationGroup="8" defaultInput="0" defaultMax="1" defaultMin="-1" invertOnMirror="false" invertType="output" name="activation" propertyEditorDesc="Activation (AG ONLY)" zeroOnDeactivate="true" />
+        </Part>
+      </Parts>
+    </Assembly>
+  </DesignerPart>
+</Part>

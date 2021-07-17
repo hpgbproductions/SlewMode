@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModManifest buildID="4fd60d62-51e5-42bb-82da-1eb7e709bb4b">
+  <Mod name="SlewMode" author="hpgbproductions" versionMajor="1" versionMinor="0" loadPriority="1000" lastUpdated="2021-07-17T06:19:19.4390258Z" apiVersion="1.0.0.0" description="Provides methods for simple movement and rotation.">
+    <Steam title="" visibility="Public" previewPath="" language="English" tags="">
+      <description></description>
+    </Steam>
+    <GameObjects>
+      <GameObject name="AntigravityController" path="Assets/_ModAssets_/Parts/AntigravityController.prefab" />
+      <GameObject name="CollisionsController" path="Assets/_ModAssets_/Parts/CollisionsController.prefab" />
+      <GameObject name="InputChannel" path="Assets/_ModAssets_/Parts/InputChannel.prefab" />
+      <GameObject name="PositionController" path="Assets/_ModAssets_/Parts/PositionController.prefab" />
+      <GameObject name="RotationController" path="Assets/_ModAssets_/Parts/RotationController.prefab" />
+    </GameObjects>
+    <Assets>
+      <Asset path="Assets/Supply/anticollisions.mat" />
+      <Asset path="Assets/Supply/anticollisions.png" />
+      <Asset path="Assets/Supply/antigravity.mat" />
+      <Asset path="Assets/Supply/antigravity.png" />
+      <Asset path="Assets/Supply/input.mat" />
+      <Asset path="Assets/Supply/input.png" />
+      <Asset path="Assets/Supply/position.mat" />
+      <Asset path="Assets/Supply/position.png" />
+      <Asset path="Assets/Supply/rotation.mat" />
+      <Asset path="Assets/Supply/rotation.png" />
+    </Assets>
+    <MaterialShaderMap>
+      <Material name="anticollisions" shader="Standard" />
+      <Material name="antigravity" shader="Standard" />
+      <Material name="input" shader="Standard" />
+      <Material name="position" shader="Standard" />
+      <Material name="rotation" shader="Standard" />
+    </MaterialShaderMap>
+    <Assemblies>
+      <Assembly name="SlewMode-Assembly-CSharp.dll" path="Assets/_ModAssets_/SlewMode-Assembly-CSharp.dll.bytes" isProjectAssembly="true" />
+    </Assemblies>
+    <Sections>
+      <SimplePlanesMod apiVersion="1.0.0.0">
+        <Maps />
+        <Levels />
+        <Parts>
+          <Part name="AntigravityController" prefabPath="Assets/_ModAssets_/Parts/AntigravityController.prefab" xmlPath="Assets/_ModAssets_/Parts/AntigravityController.xml" />
+          <Part name="CollisionsController" prefabPath="Assets/_ModAssets_/Parts/CollisionsController.prefab" xmlPath="Assets/_ModAssets_/Parts/CollisionsController.xml" />
+          <Part name="InputChannel" prefabPath="Assets/_ModAssets_/Parts/InputChannel.prefab" xmlPath="Assets/_ModAssets_/Parts/InputChannel.xml" />
+          <Part name="PositionController" prefabPath="Assets/_ModAssets_/Parts/PositionController.prefab" xmlPath="Assets/_ModAssets_/Parts/PositionController.xml" />
+          <Part name="RotationController" prefabPath="Assets/_ModAssets_/Parts/RotationController.prefab" xmlPath="Assets/_ModAssets_/Parts/RotationController.xml" />
+        </Parts>
+        <DesignerPlugins />
+        <MapPlugins />
+        <PersistentObjects />
+      </SimplePlanesMod>
+    </Sections>
+  </Mod>
+</ModManifest>
